@@ -1,0 +1,97 @@
+:root{
+    --bitcoinOrange: #f7931a;
+    --softOrange: #FFE9D5;
+    --secondaryBlue: #1A9AF7;
+    --softBlue: #E7F5FF;
+    --warmBlack: #201e1c;
+    --black: #282623;
+    --grey: #BABABA;
+    --offWhite: #FAF8F7;
+    --white: #FFF;
+
+    --interFont: "Inter", sans-serif;
+    --sansFont: "DM Sans", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--sansFont)
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+header .headerTitleContainer{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+header .headerTitleContainer h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--offWhite);
+}
+
+header .headerTitleContainer p{
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--softOrange);
+}
+
+header .headerTitleContainer .headerButton{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: flex;
+    margin-top: 36px;
+    padding: 16px;
+    width: 240px;
+    height: 48px;
+    background-color: var(--offWhite);
+    box-shadow: 0px 4px 8px rgba(89,73,30, 0.16);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .headerTitleContainer .headerButton span{
+    width: 24px;
+    margin-left: 8px;
+    background-image: url('../Assets/Icons/flechaAbajo.svg');
+}
