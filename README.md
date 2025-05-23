@@ -63,3 +63,25 @@ Desde el Figma vamos a importar los colores gradientes para el background del he
 ## 9. Estilos Css para boton en Header con BEM
 
 Agregando los estilos en el boton.
+
+## 10. Diseño y estilos de Seccion de intercambios con HTML y CSS
+
+Agregamos el esquemas de los primeros estilos del main en el HTML y le dimos ya sus primeros intercambios con CSS.
+
+## 11. Estilos CSS para imagenes de fondo y texto en HTML
+
+Estilizo el background Img y finalizo la parte de los texto para seguir con las tablas en HTML
+
+## 12. Creacion de tablas HTML con estilos y actualizacion de Datos
+
+Creamos tablas con etiqueta table en HTML, luego se le aplicara grid para la optimizacion del layout, de momento se aprendera el uso de esas etiquetas para hacerlo en html.
+
+se usa la etiqueta `table` y dentro de esta se usa la etiqueta `tr` que hacer referencia a las filas que van a tener las tablas y dentro de `tr` se ubica la etiqueta `td` que hace referencia a la informacion que continene la tabla.
+
+Nota: el `td` tambien sirve para dividir las columnas.
+
+## 13. Estilos CSS para tablas: Diseño y personalizacion Avanzada
+
+## 14. Estilos CSS para Tablas de monedas en HTML
+
+## 17. Estilos CSS para tablas y herencia de fuentes
