@@ -162,7 +162,6 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoinOrange);
-    text-align: left;
 }
 
 .mainCurrencyTable .currencyTableContainer{
@@ -253,4 +252,148 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     line-height: 1.5rem;
     color: var(--warmBlack);
     font-weight: 400;
+}
+
+.darkBackground{
+    width: 100%;
+    height: auto;
+    background-color: var(--warmBlack);
+}
+
+.mainProductDetail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    height: auto;
+    padding: 20px 10px;
+    margin: 0 auto;
+    background-color: var(--warmBlack);
+}
+
+.mainProductDetail .logoPapa{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background-image: url(../Assets/Icons/logoVanilla.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: -10px;
+    left: calc(50% - 20px);
+}
+
+.mainProductDetail .productDetailTitle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mainProductDetail .productDetailTitle h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+
+.mainProductDetail .productDetailTitle p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.productDetailCard{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 160px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.productDetailCard .reloj{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .ojo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/eye.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .dollar{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/dollarSign.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .chulo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/checkCircle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .productCardTitle{
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8;
+    color: var(--white);
+}
+
+.productDetailCard .productCardBody{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.bitcoinImgContainer{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../Assets/img/bitcoinbaby.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoinImgContainer h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
 }

@@ -84,4 +84,20 @@ Nota: el `td` tambien sirve para dividir las columnas.
 
 ## 14. Estilos CSS para Tablas de monedas en HTML
 
-## 17. Estilos CSS para tablas y herencia de fuentes
+## 15. Estilos CSS para tablas y herencia de fuentes
+
+## 16. Estructuracion de secciones y tarjetas en HTML y CSS
+
+Comenzando con la seccion de beneficios.
+
+## 17. Estilos CSS para seccion de beneficion en HTML
+
+## 18. Estilos CSS para tarjetas de Beneficios Responsivas
+
+## 19. Solucion de overflow y Sección de imagen en css
+
+El overflow se produce por ejemplo cuando se da que el texto del componente hijo ocupa mas espacio que el contenedor padre y por ende se termina viendo salido en algunos espacios
+
+![Imagen de Ejemplo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1M5UllZow1S062Ni2Qrqi50H23PyPjU6Xw&s)
+
+## 20. Creacion de Seccion de Planes con HTML y CSS
