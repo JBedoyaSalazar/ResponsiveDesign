@@ -125,3 +125,7 @@ En el hijo con los contenedores que vamos a hacer el Scroll hiria la siguiente l
 Con esta linea vamos a obligar a que la pantalla deslice la siguiente tarjeta directamente en el centro.
 
 ## 24. Diseño de footer Responsive para landing page
+
+## 25. Media Queries
+
+## 26. Mejora de Performance y Accesibilidad Web con LightHouse

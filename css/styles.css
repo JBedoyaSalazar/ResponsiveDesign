@@ -439,17 +439,16 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
 }
 
 /* Descomentar la siguiente linea al momento de hacer el scroll */
-/* .plansContainerSlider{
+.plansContainerSlider{
     display: flex;
     height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    gap: 50px;
     position: relative;
-} */
+}
 
-.flechaIzquierda{
+/* .flechaIzquierda{
     width: 20px;
     height: 20px;
     background-image: url(../Assets/Icons/VectorIzquierda.svg);
@@ -473,7 +472,7 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     position: absolute;
     right: 20px;
     top: 100px;
-}
+} */
 
 .plansContainerCard{
     position: relative;
@@ -482,7 +481,7 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--white);
     border-radius: 16px;
@@ -559,10 +558,6 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
-
-.mainPlansContainer .plansContainerSlider .secondCard, .mainPlansContainer .plansContainerSlider .thirdCard{
-    display: none;
-} 
 
 footer{
     display: flex;
