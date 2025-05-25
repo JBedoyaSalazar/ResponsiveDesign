@@ -1,0 +1,587 @@
+:root{
+    --bitcoinOrange: #f7931a;
+    --softOrange: #FFE9D5;
+    --secondaryBlue: #1A9AF7;
+    --softBlue: #E7F5FF;
+    --warmBlack: #201e1c;
+    --black: #282623;
+    --grey: #BABABA;
+    --offWhite: #FAF8F7;
+    --white: #FFF;
+
+    --interFont: "Inter", sans-serif;
+    --sansFont: "DM Sans", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--sansFont);
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+header .headerTitleContainer{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+header .headerTitleContainer h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--offWhite);
+}
+
+header .headerTitleContainer p{
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--softOrange);
+}
+
+header .headerTitleContainer .headerButton{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: flex;
+    margin-top: 36px;
+    padding: 16px;
+    width: 240px;
+    height: 48px;
+    background-color: var(--offWhite);
+    box-shadow: 0px 4px 8px rgba(89,73,30, 0.16);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .headerTitleContainer .headerButton span{
+    width: 24px;
+    margin-left: 8px;
+    background-image: url('../Assets/Icons/flechaAbajo.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--offWhite);
+}
+
+main .mainExchangeContainer{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+main .mainExchangeContainer .backgroungImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('../Assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .mainExchangeContainer .mainExchangeContainerTitle{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main .mainExchangeContainer .mainExchangeContainerTitle h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warmBlack);
+}
+
+main .mainExchangeContainer .mainExchangeContainerTitle p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: rgba(117, 117, 117, 1);
+}
+
+.mainCurrencyTable{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: var(--interFont);
+}
+
+.mainCurrencyTable .currencyTableTitle{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoinOrange);
+}
+
+.mainCurrencyTable .currencyTableContainer{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.currencyTableContainer table{
+    width: 100%;
+    height: 100%;
+}
+
+.currencyTableContainer td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--softOrange);
+}
+
+.currencyTableContainer .tableTopLeft{
+    border-radius: 15px 0 0 0;
+}
+
+.currencyTableContainer .tableTopRight{
+    border-radius: 0 15px 0 0;
+}
+
+.currencyTableContainer .tableBottomRight{
+    border-radius: 0 0 15px 0;
+}
+
+.currencyTableContainer .tableBottomLeft{
+    border-radius: 0 0 0 15px;
+}
+
+.currencyTableContainer .tableRight{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.currencyTableContainer .down{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-image: url('../Assets/Icons/flechaAbajoTendencia.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+.currencyTableContainer .up{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-image: url('../Assets/Icons/flechaArribaTendencia.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+.mainCurrencyTable .currencyTableDate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--softOrange);
+    border-radius: 8px;
+}
+
+.mainCurrencyTable .currencyTableDate p{
+    align-self: center;
+    justify-self: center;
+    margin: 7px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warmBlack);
+    font-weight: 400;
+}
+
+.darkBackground{
+    width: 100%;
+    height: auto;
+    background-color: var(--warmBlack);
+}
+
+.mainProductDetail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    height: auto;
+    padding: 20px 10px;
+    margin: 0 auto;
+    background-color: var(--warmBlack);
+}
+
+.mainProductDetail .logoPapa{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background-image: url(../Assets/Icons/logoVanilla.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: -10px;
+    left: calc(50% - 20px);
+}
+
+.mainProductDetail .productDetailTitle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mainProductDetail .productDetailTitle h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+
+.mainProductDetail .productDetailTitle p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.productDetailCard{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 160px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.productDetailCard .reloj{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .ojo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/eye.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .dollar{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/dollarSign.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .chulo{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+    background-image: url(../Assets/Icons/checkCircle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productDetailCard .productCardTitle{
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8;
+    color: var(--white);
+}
+
+.productDetailCard .productCardBody{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.bitcoinImgContainer{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../Assets/img/bitcoinbaby.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bitcoinImgContainer h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+
+.mainPlansContainer{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plansTitle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+.plansTitle h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plansTitle p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.plansContainerSlider{
+    position: relative;
+}
+
+/* Descomentar la siguiente linea al momento de hacer el scroll */
+.plansContainerSlider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    position: relative;
+}
+
+/* .flechaIzquierda{
+    width: 20px;
+    height: 20px;
+    background-image: url(../Assets/Icons/VectorIzquierda.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+
+.flechaDerecha{
+    width: 20px;
+    height: 20px;
+    background-image: url(../Assets/Icons/VectorDerecha.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+} */
+
+.plansContainerCard{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+
+.plansContainerCard .recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoinOrange);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    top: -16px;
+    left: calc(50% - 55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planCardTitle{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.planCardPrice{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    /* line-height: 6.3rem; */
+    color: black;
+    font-family: var(--interFont);
+}
+
+.planCardPrice span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    top: -30px;
+    font-family: var(--interFont);
+}
+
+.planCardSaving{
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+
+.planCardCallToAction{
+    width:  150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #FAF8F7;
+    border: 2px solid var(--bitcoinOrange);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: var(--sansFont);
+}
+
+.planCardCallToAction span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../Assets/Icons/arrowRight.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoinOrange);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+footer section img{
+    justify-self: center;
+    align-self: center;
+}
