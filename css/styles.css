@@ -21,7 +21,8 @@
 
 html{
     font-size: 62.5%;
-    font-family: var(--sansFont)
+    font-family: var(--sansFont);
+    scroll-behavior: smooth;
 }
 
 body{
@@ -97,6 +98,7 @@ header .headerTitleContainer .headerButton span{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
 
 main{
@@ -183,7 +185,7 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--grey);
-    background-color: var(--offWhite);
+    background-color: var(--softOrange);
 }
 
 .currencyTableContainer .tableTopLeft{
@@ -218,6 +220,7 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
 
 .currencyTableContainer .up{
@@ -229,6 +232,7 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    vertical-align: text-bottom;
 }
 
 .mainCurrencyTable .currencyTableDate{
@@ -396,4 +400,193 @@ main .mainExchangeContainer .mainExchangeContainerTitle p{
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--white);
+}
+
+.mainPlansContainer{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plansTitle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+.plansTitle h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plansTitle p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
+
+.plansContainerSlider{
+    position: relative;
+}
+
+/* Descomentar la siguiente linea al momento de hacer el scroll */
+/* .plansContainerSlider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 50px;
+    position: relative;
+} */
+
+.flechaIzquierda{
+    width: 20px;
+    height: 20px;
+    background-image: url(../Assets/Icons/VectorIzquierda.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+
+.flechaDerecha{
+    width: 20px;
+    height: 20px;
+    background-image: url(../Assets/Icons/VectorDerecha.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+
+.plansContainerCard{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+
+.plansContainerCard .recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoinOrange);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    top: -16px;
+    left: calc(50% - 55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planCardTitle{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.planCardPrice{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    /* line-height: 6.3rem; */
+    color: black;
+    font-family: var(--interFont);
+}
+
+.planCardPrice span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    top: -30px;
+    font-family: var(--interFont);
+}
+
+.planCardSaving{
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+
+.planCardCallToAction{
+    width:  150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #FAF8F7;
+    border: 2px solid var(--bitcoinOrange);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: var(--sansFont);
+}
+
+.planCardCallToAction span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../Assets/Icons/arrowRight.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+.mainPlansContainer .plansContainerSlider .secondCard, .mainPlansContainer .plansContainerSlider .thirdCard{
+    display: none;
+} 
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoinOrange);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+footer section img{
+    justify-self: center;
+    align-self: center;
 }

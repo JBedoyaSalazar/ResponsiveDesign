@@ -101,3 +101,27 @@ El overflow se produce por ejemplo cuando se da que el texto del componente hijo
 ![Imagen de Ejemplo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1M5UllZow1S062Ni2Qrqi50H23PyPjU6Xw&s)
 
 ## 20. Creacion de Seccion de Planes con HTML y CSS
+
+## 21. Estilos CSS Base para seccion de planes en HTML
+
+## 22. Estilos CSS Avanzados para Botones y tarjetas en HTML
+
+Con el `vertical-align: text-bottom` Se alinea la imagen con la parte de abajo del texto dejando que se vea mas centrado.
+
+## 23. Scroll Horizontal con CSS desde cero
+
+Para hacer el scroll vamos a usar las siguientes lineas de codigo.
+
+1. `overflow-x: scroll;`
+2. `overscroll-behavior-x: contain;`
+3. `scroll-snap-type: x proximity;`
+
+Estas reglas van en el contenedor padre el cual trae las secciones a las cuales queremos hacer el scroll.
+
+En el hijo con los contenedores que vamos a hacer el Scroll hiria la siguiente linea.
+
+`scroll-snap-align: center;`
+
+Con esta linea vamos a obligar a que la pantalla deslice la siguiente tarjeta directamente en el centro.
+
+## 24. Diseño de footer Responsive para landing page
